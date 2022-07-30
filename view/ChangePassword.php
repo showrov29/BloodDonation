@@ -9,6 +9,7 @@ $username = $_SESSION['username'];
 <html>
 	<head>
 	<link rel="stylesheet" href="../view/templete/style.css">
+	<script src="js/validate.js"></script>
 	</head>
 <?php include('templete/header.php')  ?>
 
@@ -24,7 +25,7 @@ $username = $_SESSION['username'];
 
 	<h1 >Update Password</h1>
 
-	<form action="../controller/changePasswordAction.php" method="POST" novalidate>
+	<form action="../controller/ChangePasswordAction.php" method="POST" novalidate onsubmit="return validate_pass(this);">
 
 		<label for="uname">Username</label>
 		<input type="text" name="username" id="uname" value="<?php echo $_SESSION['username'] ?>" size="25" maxlength="5" disabled >			

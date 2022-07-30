@@ -14,11 +14,12 @@ $username = $_SESSION['username'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Event</title>
     <link rel="stylesheet" href="../view/templete/style.css">
+    <script src="js/event.js"></script>
 </head>
 <body>
 <?php include('../view/templete/header.php')  ?> 
     
-<form action="../controller/createEventAction.php" method="POST" novalidate>
+<form action="../controller/createEventAction.php" method="POST" novalidate onsubmit="return validate_event(this);">
     <fieldset>
         <legend>Create Event</legend>
         <label for="edate"> Event Date</label>

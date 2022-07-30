@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../view/templete/style.css">
+    <script src="js/passForgot.js"></script>
 </head>
 <body>
 
 
-<form action="../controller/forgotPasswordAction.php" method="POST" novalidate>
+<form action="../controller/forgotPasswordAction.php" method="POST" novalidate onsubmit="return validate_newPass(this);" >
 <label for="uname">User Name</label>
 <input type="text" name="uname" id="uname">
 <br><br>

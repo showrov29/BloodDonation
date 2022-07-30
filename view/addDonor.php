@@ -14,10 +14,11 @@ $username = $_SESSION['username'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Donor</title>
     <link rel="stylesheet" href="../view/templete/style.css">
+    <script src="js/donorValidation.js"></script>
 </head>
 <body>
 <?php include('../view/templete/header.php')  ?> 
-    <form action="../controller/addDonorAction.php" method="POST" novalidate>
+    <form action="../controller/addDonorAction.php" method="POST" novalidate onsubmit="return validate_donor(this);">
 
     <fieldset>
         <legend>Add Donor</legend>

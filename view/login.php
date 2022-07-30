@@ -8,11 +8,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login</title>
 	<link rel="stylesheet" href="../view/templete/style.css">
+	<script src="js/login.js"></script>
 </head>
 <body>
 	<h1>Welcome to Call-Blood</h1>
 	<h1>Login</h1>
-	<form action="../controller/loginAction.php" method="POST" novalidate >
+	<form action="../controller/loginAction.php" method="POST" novalidate onsubmit="return validate_login(this);" >
 		
 			<label for="username">Username:</label>
 			<input type="text" name="username" id="username" autofocus >

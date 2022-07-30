@@ -8,10 +8,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Sign Up</title>
 	<link rel="stylesheet" href="../view/templete/style.css">
+	<script src="js/registration.js"></script>
 </head>
 <body>
 	<h1>Sign Up</h1>
-	<form action="../controller/RegistrationAction.php" method="POST" novalidate >
+	<form action="../controller/RegistrationAction.php" method="POST" novalidate onsubmit="return validate_registration(this);" >
 		<label for="fname">First Name:</label>
 		<input type="text" name="fname" id="ftname" autofocus >
 		<br><br>
