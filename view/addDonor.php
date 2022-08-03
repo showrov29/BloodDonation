@@ -15,21 +15,25 @@ $username = $_SESSION['username'];
     <title>Add Donor</title>
     <link rel="stylesheet" href="../view/templete/style.css">
     <script src="js/donorValidation.js"></script>
+    <link rel="stylesheet" href="../view/css/hometop.css">
 </head>
 <body>
-<?php include('../view/templete/header.php')  ?> 
+<?php include('../view/templete/headerTop.php')  ?> 
     <form action="../controller/addDonorAction.php" method="POST" novalidate onsubmit="return validate_donor(this);">
 
     <fieldset>
         <legend>Add Donor</legend>
         <label for="fname"> First Name </label>
         <input type="text" id="fname" name="fname">
+        <span id="fnameErr"></span>
         &nbsp;
         <label for="lname">Last Name</label>
         <input type="lname" id="lname" name="lname">
+        <span id="lnameErr"></span>
         <br><br>
         <label for="age">Age</label>
         <input type="number" id="age" name="age" min="20" max="35">
+        <span id="ageErr"></span>
         <br><br>
 
         <label>Gender</label>
@@ -37,16 +41,20 @@ $username = $_SESSION['username'];
 			<label for="male">Male</label>
 			<input type="radio" name="gender" id="female" value="Female">
 			<label for="female">Female</label>
+            <span id="genderErr"></span>
 			<br><br>
 
         <label for="email">Email</label>
         <input type="text" id="email" name="email">
+        <span id="emailErr"></span>
         <br><br>
         <label for="Mobile No">Mobile no</label>
         <input type="text" id="mobile" name="mobile">
+        <span id="mobileErr"></span>
         <br><br>
         <label for="address">Address</label>
         <input type="text" id="address" name="address" size="70">
+        <span id="addrErr"></span>
         <br><br>
 
         
@@ -61,6 +69,7 @@ $username = $_SESSION['username'];
                 <option value="AB-">AB-</option>
                 <option value="AB-">AB+</option>
 			</select>
+            <span id="bloodErr"></span>
 		
        
         <br>

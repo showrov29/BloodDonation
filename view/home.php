@@ -2,24 +2,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="../view/templete/style.css">
+    <link rel="stylesheet" href="../view/css/style.css">
     </head>
 <body>
+<?php include('templete/header.php')  ?> 
 
-
-<div class="flex-Top">
-
-   
-    <p style="padding-right:400px">Hotline: +8801703077129 (9.00 AM to 5.00 PM)</p>
-    <a href="../view/login.php">
-    <button class="button button1">Login</button>
-    </a>
-    <a href="../view/registration.php">
-    <button class="button button1">Sign up</button>
-    </a>
-    
-    
-</div>
 <!-- 
 <div class="nav-container">
     <ul class="right-side">

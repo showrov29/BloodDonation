@@ -9,7 +9,8 @@ $username =$_SESSION['username'];
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="../view/templete/style.css">
-<?php include('templete/header.php')  ?>
+<link rel="stylesheet" href="../view/css/hometop.css">
+<?php include('templete/headerTop.php')  ?>
 	<?php
 	
 

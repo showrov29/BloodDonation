@@ -23,9 +23,9 @@ body{
   display:flex;
   flex-wrap:wrap;
 }
-ul{
+/* ul{
   list-style:none;
-}
+} */
 .footer{
   background-color:#df1111;
   padding-top:50px;

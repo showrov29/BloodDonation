@@ -38,9 +38,8 @@
 				$sql="UPDATE `Users` SET `Password`='$Password' WHERE `User_Name`='$Username'";
 				view($sql);
 				
-				{
-					echo "Password changed succesfully";
-				}
+				header("Location:..view/dashboard.php");
+				
 			}
 			}
 							
@@ -55,3 +54,4 @@
 	<?php include("../view/templete/footer.php") ?>
 </body>
 </html>
+

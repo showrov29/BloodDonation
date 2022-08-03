@@ -55,16 +55,17 @@
 					}
 					
 				}
+				else
+			{
+				echo "login failed";
+				echo "<br>";
+			}
 
 
 
 					
 			}
-			else
-			{
-				echo "login failed";
-				echo "<br>";
-			}
+			
 		}
 		else
 		{

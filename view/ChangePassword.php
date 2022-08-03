@@ -8,10 +8,11 @@ $username = $_SESSION['username'];
 <!DOCTYPE html>
 <html>
 	<head>
-	<link rel="stylesheet" href="../view/templete/style.css">
+	<link rel="stylesheet" href="../view/css/style.css">
 	<script src="js/validate.js"></script>
+	<link rel="stylesheet" href="../view/css/hometop.css">
 	</head>
-<?php include('templete/header.php')  ?>
+<?php include('templete/headerTop.php')  ?>
 
 	<?php 
 
@@ -32,6 +33,7 @@ $username = $_SESSION['username'];
 		<br><br>
 		<label for="password"> New Password</label>
 		<input type="password" name="password" id="password" >
+		<span id="passError"></span>
 		<br><br>		
 		<input type="submit" name="Update" value="Update">
 

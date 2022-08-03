@@ -14,7 +14,7 @@
 		   <div class="row">
 			  <div class="footer-col">
 				  <h4>contact us</h4>
-				  <ul>
+				  <ul style="background-color:#df1111;">
 					  <h5>National Headquarters</h5>
 					  <p>684-686, Red Crescent Sarak
 						Bara Maghbazar, Dhaka 1217
@@ -23,11 +23,11 @@
 						Email: info@bdrcs.org
 						</p>
 					  
-				  </ul>
+				  </ul >
 			   </div>
 			   <div class="footer-col">
 				  <h4>About Us</h4>
-				  <ul>
+				  <ul style="background-color:#df1111;">
 					  <p>We are part of the world’s largest humanitarian non-governmental organisation, The International Red Cross and Red Crescent Movement.
 
 						Our work is outlined by our guiding principles, and our history that shapes our morals and ethics.
@@ -36,7 +36,7 @@
 			   </div>
 			   <div class="footer-col">
 				  <h4>Unit or Branches</h4>
-				  <ul>
+				  <ul style="background-color:#df1111;">
 					  <p>Gazipur Unit</p>
 					  <p>Narayanganj Unit</p>
 					  <P>Mymansingh Unit</P>

@@ -13,10 +13,11 @@ require("../Data/view.php");
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Donors</title>
 	<link rel="stylesheet" href="../view/templete/style.css">
+	<link rel="stylesheet" href="../view/css/hometop.css">
 
 </head>
 <body>
-<?php include('../view/templete/header.php')  ?> 
+<?php include('../view/templete/headerTop.php')  ?> 
 <?php 
 
 
@@ -26,7 +27,7 @@ $result=view($sql);
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
-	echo " <h2>Donor Request:</h2>";
+	echo " <h2>Donor List:</h2>";
 	  echo "<table border=1>";
 	  echo "<tr>";
 	  echo "<th>Serial No</th>";

@@ -12,18 +12,21 @@ require("../Data/view.php");
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Forgot password</title>
-	<link rel="stylesheet" href="../view/templete/style.css">
+	<link rel="stylesheet" href="../view/css/style.css">
 	<script src="js/forgotPass.js"></script>
 	
 </head>
 <body>
+<?php include('templete/header.php')  ?> 
 	<h1>Reset Password</h1>
 	<form action="../view/forgotPassword.php" method="POST" novalidate onsubmit="return validate_forgotPass(this);">
 		<label for="username">Username:</label>
 		<input type="text" name="username" id="username" autofocus >
+		<span id="unameErrorMsg"></span>
 		<br><br>
 		<label for="phone">Phone number:</label>
 		<input type="tel" name="phone" id="phone" required>
+		<span id="phoneErr"></span>
 		<br><br>
 		<input type="submit" name="submit" value="Check">
 		<br><br>

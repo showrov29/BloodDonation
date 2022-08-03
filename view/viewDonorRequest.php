@@ -13,10 +13,11 @@ $username = $_SESSION['username'];
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Donors</title>
 	<link rel="stylesheet" href="../view/templete/style.css">
+	<link rel="stylesheet" href="../view/css/hometop.css">
 
 </head>
 <body>
-<?php include('../view/templete/header.php')  ?> 
+<?php include('../view/templete/headerTop.php')  ?> 
 <?php 
 
 $sql="SELECT * FROM `Donor_Request`";

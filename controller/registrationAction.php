@@ -129,13 +129,7 @@ if ($flag===0)
 	{
 	$user=array("Fname"=>$First_name,"Lname"=>$Last_name, "Phone"=>$Phone,"Email"=>$Email, "Username"=>$Username, "Password"=>$Password, "Gender"=>$gender,);
 
-	// $handle = fopen("../Data/User.json","r");
 
-	// $fr = fread($handle, filesize("../Data/User.json"));
-	
-	// $arr1=json_decode($fr);
-	// $fc=fclose($handle);
-	// $handle= fopen("../Data/User.json","w");
 
 
 	User($user);

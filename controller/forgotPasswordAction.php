@@ -47,7 +47,7 @@
 				$sql="UPDATE `Users` SET `Password`='$Npassword' WHERE `User_Name`='$Username'";
 				view($sql);
 
-            		echo "Password Reset succesful";
+            		header("Location:../view/login.php");
 				
 			}
 			else{
