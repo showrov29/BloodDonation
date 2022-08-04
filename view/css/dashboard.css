@@ -1,0 +1,19 @@
+.flex-x {
+    display: flex;
+  justify-content: space-around;
+    background-color: #f1f1f1;
+  
+  }
+  
+  .flex-x > div {
+    background-color: tomato;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }

@@ -1,8 +1,108 @@
-div{
-    background-color: #f1f1f1;
-  }
-  #login{
+
+
+form{
+   
+    border-radius: 2px;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    align-content: center;
+    position: relative;
+   
+    
   }
+  #form_align{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left:30%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    
+    
+  }
+  #bt{
+    border-radius: 2px;
+    align-items: stretch;
+    justify-content: space-between;
+    
+    padding-left: 15%;
+  }
+
+  input[type=submit] {
+    height: 40px;
+    width: 80px;
+    
+    
+    color: #f1f1f1;
+    background:rgb(16, 36, 187); 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+input[type=text] {
+  width: 30%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 4px;
+
+  border-color: blue;
+  border-width: 1;
+}
+input[type=tel] {
+  width: 30%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 4px;
+
+  border-color: blue;
+  border-width: 1;
+}
+input[type=email] {
+  width: 30%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 4px;
+
+  border-color: blue;
+  border-width: 1;
+}
+input[type=password] {
+  width: 30%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 4px;
+  
+  border-color: blue;
+  border-width: 1;
+}
+label{
+  color: blue;
+  font-weight:bold;
+  font-size: large;
+  
+}
+h1{
+  align-items: center;
+  justify-self: center;
+  align-content: center;
+  padding-left: 18%;
+  color:blue;
+  font-family: 'Times New Roman', Times, serif;
+}
+span{
+  color: red;
+}

@@ -74,6 +74,6 @@
 	?>
 	<br><br>
 	<a href="../view/login.php">Go Back</a>
-	<?php include("../view/templete/footer.php") ?>
+	<!-- <?php include("../view/templete/footer.php") ?> -->
 </body>
 </html>

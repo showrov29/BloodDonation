@@ -12,17 +12,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login</title>
 	<link rel="stylesheet" href="../view/css/style.css">
-	<!-- <link rel="stylesheet" href="../view/css/form.css"> -->
+	<link rel="stylesheet" href="../view/css/form.css">
 	
 	<script src="js/login.js"></script>
 </head>
-<body>
+<body style="background-color:#ece2e2;">
 <?php include('templete/header.php')  ?> 
 	
 	
 	<form action="../controller/loginAction.php" method="POST" novalidate onsubmit="return validate_login(this);" >
 		
-	<div id="login">
+	<div id="form_align">
 	
 			<h1>Login</h1>
 		<label for="username">Username:</label>
@@ -33,23 +33,27 @@
 			<input type="password" name="password" id="password" >
 			<span id="passwordErrorMsg"></span>
 			<br><br>
+			<div id="bt">
 			<input type="submit" name="login" value="Login">
-		
-		<br>
-		<P>Not a member yet?</P>
-		
-		<a href="Registration.php">
-			Sign Up
-		</a>
-		<br>
-		<br>
-		
-		<a href="ForgotPassword.php">
+			<a style="padding-left:30px;" href="ForgotPassword.php">
 			Forgot Password
 		</a>
+		
+			</div>
+			
+		
+		
+		
+	
+		<br>
+		<br>
+		
+		
+		</div>
+		
 
 
-	</div>
+	
 
 		<br>
 	</form>
