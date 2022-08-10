@@ -96,27 +96,7 @@
 
 
 
-	// 			$handle = fopen("../Data/User.json", "r");
-	// 			$fr = fread($handle, filesize("../Data/User.json"));
-	// 			$arr1 = json_decode($fr);
-				
-				
-
-
-	// for ($i=0; $i < count($arr1) ; $i++) 
-	// { 
-	// 	if(($Username == $arr1[$i]->Username))			
-	// 	{
-	// 		$flag=1;
-	// 		echo "Username is already exists";
-	// 		echo "<br>";
-	// 		break;
-	// 	}
-
-		
-	// }		
-
-	// fclose($handle);
+	
 
 
 			
@@ -130,38 +110,15 @@ if ($flag===0)
 	$user=array("Fname"=>$First_name,"Lname"=>$Last_name, "Phone"=>$Phone,"Email"=>$Email, "Username"=>$Username, "Password"=>$Password, "Gender"=>$gender,);
 
 
-
-
 	User($user);
+	
 
 
-
-
-
-	 
-
-
-	// if($arr1 === NULL)
-	// {
-	// 	$user=array($user);
-	// 	$user=json_encode($user);
-	// 	$fw=fwrite($handle, $user);
-	// }
-	// else
-	// {
-	// 	$arr1[]= $user;
-	// 	$user=json_encode($arr1);
-	// 	$fw=fwrite($handle, $user);
-	// }
-	// $fc=fclose($handle);
-				
-				//header("Location:../view/login.php");
-				//echo "Registration Successful";
 				
 		}
 		else
 		{
-			echo "Password can't be empty.";
+			$_SESSION['regErr']="Registration Successful";
 		}
 	}
 }

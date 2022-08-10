@@ -3,8 +3,8 @@ session_start();
 $username = $_SESSION['username'];
 	if (!isset($_SESSION['username'])) {
 		header("Location:login.php");
-	  }
-require("../Data/view.php");
+	  } 
+	  require("../Data/view.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,17 +17,16 @@ require("../Data/view.php");
 
 </head>
 <body>
-<?php include('../view/templete/headerTop.php')  ?> 
+
 <?php 
 
-
-$sql="SELECT * FROM `Donor_List`";
+$sql="SELECT * FROM `Donor_Request`";
 $result=view($sql);
     
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
-	echo " <h2>Donor List:</h2>";
+	echo " <h2>Donor Request:</h2>";
 	  echo "<table border=1>";
 	  echo "<tr>";
 	  echo "<th>Serial No</th>";
@@ -35,10 +34,10 @@ if (mysqli_num_rows($result) > 0) {
 	  echo "<th>Last Name</th>";
 	  echo "<th>Gender</th>";
 	  echo "<th>Phone</th>";
-	  echo "<th>Email</th>";
 	  echo "<th>Age</th>";
 	  echo "<th>Blood Group</th>";
 	  echo "<th>Address</th>";
+	  echo "<th>Medical History</th>";
 	  echo "</tr>";
 	  
     while($row = mysqli_fetch_assoc($result)) {
@@ -50,10 +49,10 @@ if (mysqli_num_rows($result) > 0) {
 			  echo "<td>" .  $row["Last_Name"]. "</td>";
 			  echo "<td>" .  $row["Gender"]."</td>";
 			  echo "<td>" .  $row["Phone"]."</td>";
-			  echo "<td>" .  $row["Email"]."</td>";
 			  echo "<td>" .  $row["Age"]."</td>";
 			  echo "<td>" .  $row["Blood_Group"]."</td>";
 			  echo "<td>" .  $row["Address"]."</td>";
+			  echo "<td>" .  $row["Medical_History"]."</td>";
 		  echo "</tr>";
 	  
 	 
@@ -63,9 +62,11 @@ if (mysqli_num_rows($result) > 0) {
     echo "0 results";
   }
 
+
+
 ?>
 <br>
-<a href="../view/dashboard.php">Go Back</a>
-<?php include("../view/templete/footer.php") ?>
+<!-- <a href="../view/dashboard.php">Go Back</a>
+<?php include("../view/templete/footer.php") ?> -->
 
 </html>

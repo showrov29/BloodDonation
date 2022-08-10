@@ -11,6 +11,7 @@ $username = $_SESSION['username'];
 	<link rel="stylesheet" href="../view/css/style.css">
 	<script src="js/validate.js"></script>
 	<link rel="stylesheet" href="../view/css/hometop.css">
+	<link rel="stylesheet" href="../view/css/form.css">
 	</head>
 <?php include('templete/headerTop.php')  ?>
 
@@ -23,8 +24,9 @@ $username = $_SESSION['username'];
 	}
 
 	?>
-
-	<h1 >Update Password</h1>
+	<br>
+<div  style=" padding-left:35%;padding-right:35%;">
+	<h1 style=" padding-left:30%;">Update Password</h1>
 
 	<form action="../controller/ChangePasswordAction.php" method="POST" novalidate onsubmit="return validate_pass(this);">
 
@@ -32,7 +34,7 @@ $username = $_SESSION['username'];
 		<input type="text" name="username" id="uname" value="<?php echo $_SESSION['username'] ?>" size="25" maxlength="5" disabled >			
 		<br><br>
 		<label for="password"> New Password</label>
-		<input type="password" name="password" id="password" >
+		<input type="password" name="password" id="password" placeholder="Enter Password">
 		<span id="passError"></span>
 		<br><br>		
 		<input type="submit" name="Update" value="Update">
@@ -41,5 +43,6 @@ $username = $_SESSION['username'];
 		<a href="../view/dashboard.php">Go Back</a>
 		
 	</form>
+</div>
 	<?php include("../view/templete/footer.php") ?>
 </html>

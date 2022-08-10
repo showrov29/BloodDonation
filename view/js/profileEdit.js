@@ -1,12 +1,14 @@
+
+
 function validate_Profile(pForm) {
 	let flag = 0;
 
 	if (pForm.fname.value === "" || pForm.fname.value === null) {
-		document.getElementById("unameErrorMsg").innerHTML = "Please fill up the First Name";
+		document.getElementById("fnameErr").innerHTML = "Please fill up the First Name";
 		flag = 1;
 	}
 
-	if (pForm.lnamne.value === "" ||  pForm.lnamne.value === null) {
+	if (pForm.lname.value === "" ||  pForm.lname.value === null) {
 		document.getElementById("lnameErr").innerHTML = "Please fill up the Last Name";
 		flag = 1;
 	}

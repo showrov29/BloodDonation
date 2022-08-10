@@ -8,13 +8,21 @@ $username =$_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="../view/templete/style.css">
-<link rel="stylesheet" href="../view/css/hometop.css">
-<?php include('templete/headerTop.php')  ?>
-	<?php
+	<head>
+	<link rel="stylesheet" href="../view/templete/style.css">
+	<link rel="stylesheet" href="../view/css/hometop.css">
+	<?php include('templete/headerTop.php')  ?>
+	<link rel="stylesheet" href="../view/css/form.css">
+	</head>
+
+<body>
 	
 
+<div style=" padding-left:35%;padding-right:35%;">
+<?php
+	
 
+	
 $sql="SELECT  `First_Name`, `Last_Name`, `Gender`, `Phone`, `Email` FROM `Users` WHERE `User_Name`='$username'";
 $result=view($sql);
 
@@ -26,21 +34,21 @@ if (mysqli_num_rows($result))
 	echo"<b>Profile Information</b>	";
 	echo "<br>";
 	echo "<br>";
-	echo "First Name: " . $row["First_Name"];
+	echo "<b>First Name:</b> " . $row["First_Name"];
 	echo "<br><br>";
-	echo "Last Name: " . $row["Last_Name"];	
+	echo "<b>Last Name: </b>" . $row["Last_Name"];	
 	echo "<br><br>";				 				
-	echo "Gender: " . $row["Gender"];	
+	echo "<b>Gender: </b>" . $row["Gender"];	
 	echo "<br><br>";
-	echo "Phone: " . $row["Phone"];	
+	echo "<b>Phone: </b>" . $row["Phone"];	
 	echo "<br><br>";
-	echo "Email: " . $row["Email"];	
+	echo "<b>Email: </b>" . $row["Email"];	
 	echo "<br><br>";
 	}
 }
 else
 {
-	echo "kdshf";
+	echo "Failed";
 }
 
 
@@ -48,6 +56,8 @@ else
 
 
 ?>
+</div>
+	
 	
 
 	<a href="../view/dashboard.php">Go Back</a>

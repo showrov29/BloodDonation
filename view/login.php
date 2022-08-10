@@ -22,20 +22,28 @@
 	
 	<form action="../controller/loginAction.php" method="POST" novalidate onsubmit="return validate_login(this);" >
 		
-	<div id="form_align">
+	<div style="padding-left:35% ;padding-right:35%;">
 	
-			<h1>Login</h1>
+			<h1 style="padding-left:40% ;" >Login</h1>
 		<label for="username">Username:</label>
-			<input type="text" name="username" id="username" autofocus >
+			<input type="text" name="username" id="username" placeholder="Enter Username" autofocus >
 			<span id=unameErrorMsg></span>
-			<br><br>
+			<br>
 			<label for="password">Password:</label>
-			<input type="password" name="password" id="password" >
+			<input type="password" name="password" id="password" placeholder="Enter password" >
 			<span id="passwordErrorMsg"></span>
 			<br><br>
 			<div id="bt">
-			<input type="submit" name="login" value="Login">
-			<a style="padding-left:30px;" href="ForgotPassword.php">
+			<input type="submit" name="login" value="Login"><br><br>
+			<?php 
+			if(isset($_SESSION['logStatus']) and !empty($_SESSION['logStatus'])){
+				echo $_SESSION['logStatus'];
+			}
+			
+			
+			?>
+			<br>
+			<a style="padding-left:35%;" href="ForgotPassword.php">
 			Forgot Password
 		</a>
 		

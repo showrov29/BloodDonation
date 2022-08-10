@@ -38,7 +38,7 @@
 				$sql="UPDATE `Users` SET `Password`='$Password' WHERE `User_Name`='$Username'";
 				view($sql);
 				
-				header("Location:..view/dashboard.php");
+				header("Location:../view/dashboard.php");
 				
 			}
 			}

@@ -57,6 +57,8 @@
 				}
 				else
 			{
+				$_SESSION['logStatus']="Login Failed";
+				header("Location:../view/login.php");
 				echo "login failed";
 				echo "<br>";
 			}

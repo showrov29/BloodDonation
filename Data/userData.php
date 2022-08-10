@@ -22,8 +22,14 @@ $sql = "INSERT INTO `Users`(`First_Name`, `Last_Name`, `Gender`, `Phone`, `Email
     
       
       if (mysqli_query($conn, $sql)) {
+        $_SESSION['regErr']="Registration Successfull";
+        header("Location:../view/registration.php");
+
           echo "New record created successfully";
         } else {
+
+          $_SESSION['regErr']="Registration Failed";
+         header("Location:../view/registration.php");
           echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
         

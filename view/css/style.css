@@ -3,13 +3,14 @@
 
 
 
-body{
-  line-height:1.5;
+/* body{
+  /* line-height:1.5;
  
-  font-family: 'Poppins', sans-serif;
-  background-color: rgb(247, 239, 239);
+  font-family: 'Poppins', sans-serif; */
+  /* background-color: rgb(44, 42, 42);
  
-}
+} */ 
+
 *{
   margin:0;
   padding:0;

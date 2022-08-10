@@ -18,21 +18,21 @@ require("../Data/view.php");
 
 </head>
 <body >
-<?php include('../view/templete/headerTop.php')  ?> 
+
 <?php 
 
-$sql="SELECT * FROM `Training`";
+$sql="SELECT * FROM `Event`";
 $result=view($sql);
     
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
-		echo " <h2>Training Events:</h2>";
+		echo " <h2>Blood Collection Events:</h2>";
 	echo "<table border=1 >";
 		echo "<tr>";
-			echo "<th>Date </th>";
-			echo "<th>Room No </th>";
-			echo "<th>Traine</th>";
+			echo "<th>Event ID </th>";
+			echo "<th>Event Date </th>";
+			echo "<th>Event Location</th>";
 			echo "<th>Event Time</th>";
 		echo "</tr>";
 		
@@ -41,9 +41,9 @@ if (mysqli_num_rows($result) > 0) {
     
 	
 		echo "<tr>";
-			echo "<td>" . $row["Date"]."</td>";
-			echo "<td>" . $row["Room_No"]. "</td>";
-            echo "<td>" . $row["Traine"]."</td>";
+			echo "<td>" . $row["Id"]."</td>";
+			echo "<td>" . $row["Date"]. "</td>";
+            echo "<td>" . $row["Location"]."</td>";
             echo "<td>" . $row["Time"]."</td>";
             
 		echo "</tr>";
@@ -60,7 +60,7 @@ if (mysqli_num_rows($result) > 0) {
 
 ?>
 <br>
-<a href="../view/dashboard.php">Go Back</a>
-<?php include("../view/templete/footer.php") ?>
+
+
 
 </html>

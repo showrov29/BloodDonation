@@ -19,7 +19,7 @@ $username = $_SESSION['username'];
 </head>
 <body>
 	
-<?php include('../view/templete/headerTop.php')  ?> 
+
 <?php 
 
 
@@ -69,7 +69,5 @@ if (mysqli_num_rows($result) > 0) {
 	
 ?>
 <br>
-<a href="../view/dashboard.php">Go Back</a>
-<?php include("../view/templete/footer.php") ?>
 
 </html>

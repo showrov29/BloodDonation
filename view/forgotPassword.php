@@ -14,18 +14,20 @@ require("../Data/view.php");
 	<title>Forgot password</title>
 	<link rel="stylesheet" href="../view/css/style.css">
 	<script src="js/forgotPass.js"></script>
+	<link rel="stylesheet" href="../view/css/form.css">
 	
 </head>
 <body>
 <?php include('templete/header.php')  ?> 
+<div style=" padding-left:35%;padding-right:35%;">
 	<h1>Reset Password</h1>
 	<form action="../view/forgotPassword.php" method="POST" novalidate onsubmit="return validate_forgotPass(this);">
 		<label for="username">Username:</label>
-		<input type="text" name="username" id="username" autofocus >
+		<input type="text" name="username" id="username" placeholder="Enter Username" autofocus >
 		<span id="unameErrorMsg"></span>
 		<br><br>
 		<label for="phone">Phone number:</label>
-		<input type="tel" name="phone" id="phone" required>
+		<input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
 		<span id="phoneErr"></span>
 		<br><br>
 		<input type="submit" name="submit" value="Check">
@@ -74,19 +76,7 @@ require("../Data/view.php");
 
 
 		
-				// for ($i=0; $i < count($arr1) ; $i++) 
-				// { 
-				// 	if(($uname === $arr1[$i]->Username) && ($Phone ===$arr1[$i]->Phone))
-				// 	{
-				// 			$flag = true;
-				// 			$fc = fclose($handle);
-				// 			break;
-				// 	}
-				// 	else
-				// 	{						
-				// 		$flag == false;
-				// 	}
-				// }
+			
 
 				if ($flag === true)
 				{
@@ -110,7 +100,7 @@ require("../Data/view.php");
 			}
 		}
 	?>
-		
+	</div>	
 </body>
 <?php include("../view/templete/footer.php") ?>
 </html>

@@ -15,15 +15,15 @@
     <a href="javascript:void(0)" class="dropbtn">Menu</a>
     <div class="dropdown-content">
     
-      <a href="viewEvent.php">Events</a>
+      <!-- <a href="viewEvent.php">Events</a> -->
       <a href="addDonor.php">Add Donor</a>
-      <a href="viewDonor.php">Donor List</a>
-      <a href="viewDonorRequest.php" target="_blank">Donor Request List</a>
+      <!-- <a href="viewDonor.php">Donor List</a> -->
+      <!-- <a href="../controller/viewDonorRequest.php" target="_blank">Donor Request List</a> -->
       <a href="createEvent.php">Create Donation Event</a>
       <a href="trainingEvent.php">Create Training Event</a>
-      <a href="viewFeedback.php">Feedbacks </a>
+      <!-- <a href="viewFeedback.php">Feedbacks </a>
       <a href="showTraining.php">Show Trainig Schedule </a>
-      <a href="donation.php">Donation History </a>
+      <a href="donation.php">Donation History </a> -->
     
     </div>
   </li>
