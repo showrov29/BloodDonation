@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['username'])) {
+    header("Location:../view/login.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +15,7 @@
     
 </head>
 <body>
-<?php include('../view/templete/header.php')  ?> 
+<!-- <?php include('../view/templete/header.php')  ?>  -->
 <?php
 require("../Data/donorData.php");
 
@@ -119,7 +125,7 @@ else
 
 ?>
 <br>
-<?php include("../view/templete/footer.php") ?>
+<!-- <?php include("../view/templete/footer.php") ?> -->
 
 
 

@@ -15,6 +15,9 @@
 	<link rel="stylesheet" href="../view/css/form.css">
 	
 	<script src="js/login.js"></script>
+	<script>
+		
+	</script>
 </head>
 <body style="background-color:#ece2e2;">
 <?php include('templete/header.php')  ?> 
@@ -34,7 +37,7 @@
 			<span id="passwordErrorMsg"></span>
 			<br><br>
 			<div id="bt">
-			<input type="submit" name="login" value="Login"><br><br>
+			<input type="submit" name="login" value="Login" onclick=" test();"><br><br>
 			<?php 
 			if(isset($_SESSION['logStatus']) and !empty($_SESSION['logStatus'])){
 				echo $_SESSION['logStatus'];

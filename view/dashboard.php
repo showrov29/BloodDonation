@@ -92,6 +92,20 @@ function showData(str) {
   }
   
 }
+
+function loadDoc(str) {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  xhttp.open("POST", "searchAction.php");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("search=str");
+}
+
+
+
+
 </script>
 
 
@@ -119,6 +133,19 @@ $sql="SELECT `Ammount` FROM `Donation`";
 
 ?>
 
+<!-- <label for="search"> Search Donor By blood group</label>
+<select name="search" id="search" onchange="loadDoc(this.value)">
+				<option disabled selected value> -- select an option -- </option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+        <option value="B+">B+</option>
+				<option value="O-">O-</option>
+        <option value="O-">O+</option>
+        <option value="AB-">AB-</option>
+        <option value="AB-">AB+</option>
+			</select>
+
+      <div id="demo">Record info will be listed here...</div> -->
 
  <div class="flex-x">
 		

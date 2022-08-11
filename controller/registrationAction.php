@@ -81,6 +81,8 @@
 
 					if ($flag===1)
 					{
+						$_SESSION['regErr']="Registration Failed";
+						header("Location:../view/registration.php");
 						echo"<h4> Erros :</h4>";
 						echo "<br><br>";
 						echo "First name: " . $firstnameErrMsg;
@@ -145,6 +147,6 @@ if ($flag===0)
 
 	?>
 	<a href="../view/registration.php">Go Back</a>
-	<?php include("../view/templete/footer.php") ?>
+	<!-- <?php include("../view/templete/footer.php") ?> -->
 </body>
 </html>

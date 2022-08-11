@@ -58,7 +58,7 @@
 		<br>
 		<label for="password">Password:</label>
 		<br>
-		<input type="password" name="password" id="password" placeholder="Enter Password" maxlength="5">
+		<input type="password" name="password" id="password" placeholder="Enter Password (maximum 5 character)" maxlength="5">
 		<span id="passErr"></span>
 		<br>
 		<div id="bt">
